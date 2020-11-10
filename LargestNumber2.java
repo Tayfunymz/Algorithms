@@ -6,7 +6,7 @@ import java.util.Scanner;
 This algorithm takes a list of digits as an input and outputs them in decending order
 */
 
-public class LargestNumber2 {
+public class SelfPractice {
     private static ArrayList<String> swap(ArrayList<String> digits, int i, int j) {
         Collections.swap(digits, i, j);
         return digits;
@@ -32,9 +32,12 @@ public class LargestNumber2 {
     }
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the number of items to add to the list");
         int n = scanner.nextInt();
         ArrayList<String> a = new ArrayList<>();
         for (int i = 0; i < n; i++) {
+            System.out.println("Enter number " + (i + 1) + " of " + n);
+
             a.add(i, scanner.next());
         }
         System.out.println(largestNumber(a));
