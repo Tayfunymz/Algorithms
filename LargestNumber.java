@@ -3,10 +3,10 @@ import java.util.Collections;
 import java.util.Scanner;
 
 /*
-This algorithm takes a list of digits as an input and outputs them in decending order
+This algorithm takes a list of digits and arranges them in so that it produces the largest number
 */
 
-public class SelfPractice {
+public class LargestNumber {
     private static ArrayList<String> swap(ArrayList<String> digits, int i, int j) {
         Collections.swap(digits, i, j);
         return digits;
@@ -25,14 +25,14 @@ public class SelfPractice {
                     swap(digits, i, j);
                 }
             }
-            answer += digits.get(0) + " ";
+            answer += digits.get(0);
             digits.remove(0);
         }
         return answer;
     }
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter the number of items to add to the list");
+        System.out.println("Enter the number of items to add to the list: ");
         int n = scanner.nextInt();
         ArrayList<String> a = new ArrayList<>();
         for (int i = 0; i < n; i++) {
@@ -40,6 +40,7 @@ public class SelfPractice {
 
             a.add(i, scanner.next());
         }
+        System.out.println("\nThe largest number that can be produced with the following digits is - ");
         System.out.println(largestNumber(a));
     }
 }
