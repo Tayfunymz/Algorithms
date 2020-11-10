@@ -1,8 +1,11 @@
-package Week03;
 import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Scanner;
 
+/*
+This algorithm with denoms 1,5,10,20,25 outputs the minimum number of coins needed for change given a amount to change. 
+The denoms can be altered will work for any denoms. 
+*/
 
 public class Change {
     public static int coinChange(int[] coins, int amount) {
