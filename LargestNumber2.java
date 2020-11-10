@@ -4,6 +4,10 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
 
+/*
+This algorithm takes a list of digits as an input and outputs them in decending order
+*/
+
 public class LargestNumber2 {
     private static ArrayList<String> swap(ArrayList<String> digits, int i, int j) {
         Collections.swap(digits, i, j);
