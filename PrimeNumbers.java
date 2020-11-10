@@ -1,6 +1,7 @@
-package Week2;
 import java.util.ArrayList;
-
+/*
+This alrorithm takes in a range of numbers and outputs the prime numbers using the Sieve of eratosthenes algorithm
+*/
 public class PrimeNumbers {
     public static ArrayList<Integer> getList(int max) {
         ArrayList<Integer> numbers = new ArrayList<>();
