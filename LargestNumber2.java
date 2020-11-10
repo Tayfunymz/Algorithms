@@ -25,7 +25,7 @@ public class LargestNumber2 {
                     swap(digits, i, j);
                 }
             }
-            answer += digits.get(0);
+            answer += digits.get(0) + " ";
             digits.remove(0);
         }
         return answer;
