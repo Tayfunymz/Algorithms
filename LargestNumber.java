@@ -3,7 +3,7 @@ import java.util.Collections;
 import java.util.Scanner;
 
 /*
-This algorithm takes a list of digits and arranges them in so that it produces the largest number
+This algorithm takes a list of digits and rearranges them so that it produces the largest number
 */
 
 public class LargestNumber {
